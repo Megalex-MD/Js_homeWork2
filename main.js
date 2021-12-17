@@ -247,7 +247,7 @@ return false;
  */
 
 // cbRandom(a, b) – вычисляет и возвращает произвольное целое число в диапазоне между a и b включительно.
-function cbRadnom(min, max){
+function cbRandom(min, max){
   
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -273,9 +273,9 @@ function cbAdd(a, b){
  * mainFunc(2, 5, 'not a func') → false
  */
 
-console.log(mainFunc(2, 5, cbRadnom)); // целые числа в диапазоне 2..5 включительно
+console.log(mainFunc(2, 5, cbRandom)); // целые числа в диапазоне 2..5 включительно
 
-console.log(mainFunc(10, 30, cbRadnom)); // целые числа в диапазоне 10..30 включительно
+console.log(mainFunc(10, 30, cbRandom)); // целые числа в диапазоне 10..30 включительно
 
 console.log(mainFunc(2, 5, cbPow)); // 32
 
